@@ -5,7 +5,7 @@ now = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
 print(f"[STARTED] Starting deployment at {now}")
 
-app_root = "/Users/cheonsoo.park/Workspace/chance/devnology-posts"
+app_root = "/Users/mansoo/Workspace/mansoo/devnology-posts"
 s3_bucket = "s3://static.devnology.co.kr"
 
 print("====================================================================================================")
@@ -14,7 +14,7 @@ print("=========================================================================
 os.system(
     f"aws s3 sync {app_root}/config {s3_bucket}/files/config --profile chance")
 os.system(
-    f"aws s3 sync {app_root}/posts {s3_bucket}/files/posts --profile chance")
+    f"aws s3 sync {app_root}/apps {s3_bucket}/files/apps --profile chance")
 
 end = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 print(f"[FINISHED] Deployment Finished at {end}")

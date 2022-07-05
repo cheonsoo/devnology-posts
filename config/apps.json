@@ -22,9 +22,9 @@
   },
   "astar": {
     "publish": true,
-    "path": "http://static.devnology.co.kr/apps/astar/index.html",
+    "path": "http://static.devnology.co.kr/files/apps/astar/index.html",
     "type": "s3",
-    "title": "Astar Path Finding Algorighm V1.0.0",
+    "title": "Astar Path Finding Algorighm V1.0.3",
     "desc": "Java Script 로 Astar 구현하기"
   },
   "visualizedArrayCompare": {
